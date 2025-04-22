@@ -8,7 +8,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model FMBlogPost {
+model BlogPost {
   id          String   @id @default(cuid())
   title       String
   content     String

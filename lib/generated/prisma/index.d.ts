@@ -14,10 +14,10 @@ export type PrismaPromise<T> = $Public.PrismaPromise<T>
 
 
 /**
- * Model FMBlogPost
+ * Model BlogPost
  * 
  */
-export type FMBlogPost = $Result.DefaultSelection<Prisma.$FMBlogPostPayload>
+export type BlogPost = $Result.DefaultSelection<Prisma.$BlogPostPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -26,8 +26,8 @@ export type FMBlogPost = $Result.DefaultSelection<Prisma.$FMBlogPostPayload>
  * @example
  * ```
  * const prisma = new PrismaClient()
- * // Fetch zero or more FMBlogPosts
- * const fMBlogPosts = await prisma.fMBlogPost.findMany()
+ * // Fetch zero or more BlogPosts
+ * const blogPosts = await prisma.blogPost.findMany()
  * ```
  *
  *
@@ -47,8 +47,8 @@ export class PrismaClient<
    * @example
    * ```
    * const prisma = new PrismaClient()
-   * // Fetch zero or more FMBlogPosts
-   * const fMBlogPosts = await prisma.fMBlogPost.findMany()
+   * // Fetch zero or more BlogPosts
+   * const blogPosts = await prisma.blogPost.findMany()
    * ```
    *
    *
@@ -145,14 +145,14 @@ export class PrismaClient<
   }>>
 
       /**
-   * `prisma.fMBlogPost`: Exposes CRUD operations for the **FMBlogPost** model.
+   * `prisma.blogPost`: Exposes CRUD operations for the **BlogPost** model.
     * Example usage:
     * ```ts
-    * // Fetch zero or more FMBlogPosts
-    * const fMBlogPosts = await prisma.fMBlogPost.findMany()
+    * // Fetch zero or more BlogPosts
+    * const blogPosts = await prisma.blogPost.findMany()
     * ```
     */
-  get fMBlogPost(): Prisma.FMBlogPostDelegate<ExtArgs, ClientOptions>;
+  get blogPost(): Prisma.BlogPostDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -593,7 +593,7 @@ export namespace Prisma {
 
 
   export const ModelName: {
-    FMBlogPost: 'FMBlogPost'
+    BlogPost: 'BlogPost'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -612,81 +612,81 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "fMBlogPost"
+      modelProps: "blogPost"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
-      FMBlogPost: {
-        payload: Prisma.$FMBlogPostPayload<ExtArgs>
-        fields: Prisma.FMBlogPostFieldRefs
+      BlogPost: {
+        payload: Prisma.$BlogPostPayload<ExtArgs>
+        fields: Prisma.BlogPostFieldRefs
         operations: {
           findUnique: {
-            args: Prisma.FMBlogPostFindUniqueArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload> | null
+            args: Prisma.BlogPostFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload> | null
           }
           findUniqueOrThrow: {
-            args: Prisma.FMBlogPostFindUniqueOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>
+            args: Prisma.BlogPostFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>
           }
           findFirst: {
-            args: Prisma.FMBlogPostFindFirstArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload> | null
+            args: Prisma.BlogPostFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload> | null
           }
           findFirstOrThrow: {
-            args: Prisma.FMBlogPostFindFirstOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>
+            args: Prisma.BlogPostFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>
           }
           findMany: {
-            args: Prisma.FMBlogPostFindManyArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>[]
+            args: Prisma.BlogPostFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>[]
           }
           create: {
-            args: Prisma.FMBlogPostCreateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>
+            args: Prisma.BlogPostCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>
           }
           createMany: {
-            args: Prisma.FMBlogPostCreateManyArgs<ExtArgs>
+            args: Prisma.BlogPostCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
           createManyAndReturn: {
-            args: Prisma.FMBlogPostCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>[]
+            args: Prisma.BlogPostCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>[]
           }
           delete: {
-            args: Prisma.FMBlogPostDeleteArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>
+            args: Prisma.BlogPostDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>
           }
           update: {
-            args: Prisma.FMBlogPostUpdateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>
+            args: Prisma.BlogPostUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>
           }
           deleteMany: {
-            args: Prisma.FMBlogPostDeleteManyArgs<ExtArgs>
+            args: Prisma.BlogPostDeleteManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateMany: {
-            args: Prisma.FMBlogPostUpdateManyArgs<ExtArgs>
+            args: Prisma.BlogPostUpdateManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateManyAndReturn: {
-            args: Prisma.FMBlogPostUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>[]
+            args: Prisma.BlogPostUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>[]
           }
           upsert: {
-            args: Prisma.FMBlogPostUpsertArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$FMBlogPostPayload>
+            args: Prisma.BlogPostUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BlogPostPayload>
           }
           aggregate: {
-            args: Prisma.FMBlogPostAggregateArgs<ExtArgs>
-            result: $Utils.Optional<AggregateFMBlogPost>
+            args: Prisma.BlogPostAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateBlogPost>
           }
           groupBy: {
-            args: Prisma.FMBlogPostGroupByArgs<ExtArgs>
-            result: $Utils.Optional<FMBlogPostGroupByOutputType>[]
+            args: Prisma.BlogPostGroupByArgs<ExtArgs>
+            result: $Utils.Optional<BlogPostGroupByOutputType>[]
           }
           count: {
-            args: Prisma.FMBlogPostCountArgs<ExtArgs>
-            result: $Utils.Optional<FMBlogPostCountAggregateOutputType> | number
+            args: Prisma.BlogPostCountArgs<ExtArgs>
+            result: $Utils.Optional<BlogPostCountAggregateOutputType> | number
           }
         }
       }
@@ -774,7 +774,7 @@ export namespace Prisma {
     omit?: Prisma.GlobalOmitConfig
   }
   export type GlobalOmitConfig = {
-    fMBlogPost?: FMBlogPostOmit
+    blogPost?: BlogPostOmit
   }
 
   /* Types for Logging */
@@ -870,16 +870,16 @@ export namespace Prisma {
    */
 
   /**
-   * Model FMBlogPost
+   * Model BlogPost
    */
 
-  export type AggregateFMBlogPost = {
-    _count: FMBlogPostCountAggregateOutputType | null
-    _min: FMBlogPostMinAggregateOutputType | null
-    _max: FMBlogPostMaxAggregateOutputType | null
+  export type AggregateBlogPost = {
+    _count: BlogPostCountAggregateOutputType | null
+    _min: BlogPostMinAggregateOutputType | null
+    _max: BlogPostMaxAggregateOutputType | null
   }
 
-  export type FMBlogPostMinAggregateOutputType = {
+  export type BlogPostMinAggregateOutputType = {
     id: string | null
     title: string | null
     content: string | null
@@ -890,7 +890,7 @@ export namespace Prisma {
     updatedAt: Date | null
   }
 
-  export type FMBlogPostMaxAggregateOutputType = {
+  export type BlogPostMaxAggregateOutputType = {
     id: string | null
     title: string | null
     content: string | null
@@ -901,7 +901,7 @@ export namespace Prisma {
     updatedAt: Date | null
   }
 
-  export type FMBlogPostCountAggregateOutputType = {
+  export type BlogPostCountAggregateOutputType = {
     id: number
     title: number
     content: number
@@ -914,7 +914,7 @@ export namespace Prisma {
   }
 
 
-  export type FMBlogPostMinAggregateInputType = {
+  export type BlogPostMinAggregateInputType = {
     id?: true
     title?: true
     content?: true
@@ -925,7 +925,7 @@ export namespace Prisma {
     updatedAt?: true
   }
 
-  export type FMBlogPostMaxAggregateInputType = {
+  export type BlogPostMaxAggregateInputType = {
     id?: true
     title?: true
     content?: true
@@ -936,7 +936,7 @@ export namespace Prisma {
     updatedAt?: true
   }
 
-  export type FMBlogPostCountAggregateInputType = {
+  export type BlogPostCountAggregateInputType = {
     id?: true
     title?: true
     content?: true
@@ -948,79 +948,79 @@ export namespace Prisma {
     _all?: true
   }
 
-  export type FMBlogPostAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which FMBlogPost to aggregate.
+     * Filter which BlogPost to aggregate.
      */
-    where?: FMBlogPostWhereInput
+    where?: BlogPostWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of FMBlogPosts to fetch.
+     * Determine the order of BlogPosts to fetch.
      */
-    orderBy?: FMBlogPostOrderByWithRelationInput | FMBlogPostOrderByWithRelationInput[]
+    orderBy?: BlogPostOrderByWithRelationInput | BlogPostOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
      * Sets the start position
      */
-    cursor?: FMBlogPostWhereUniqueInput
+    cursor?: BlogPostWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` FMBlogPosts from the position of the cursor.
+     * Take `±n` BlogPosts from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` FMBlogPosts.
+     * Skip the first `n` BlogPosts.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
-     * Count returned FMBlogPosts
+     * Count returned BlogPosts
     **/
-    _count?: true | FMBlogPostCountAggregateInputType
+    _count?: true | BlogPostCountAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the minimum value
     **/
-    _min?: FMBlogPostMinAggregateInputType
+    _min?: BlogPostMinAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the maximum value
     **/
-    _max?: FMBlogPostMaxAggregateInputType
+    _max?: BlogPostMaxAggregateInputType
   }
 
-  export type GetFMBlogPostAggregateType<T extends FMBlogPostAggregateArgs> = {
-        [P in keyof T & keyof AggregateFMBlogPost]: P extends '_count' | 'count'
+  export type GetBlogPostAggregateType<T extends BlogPostAggregateArgs> = {
+        [P in keyof T & keyof AggregateBlogPost]: P extends '_count' | 'count'
       ? T[P] extends true
         ? number
-        : GetScalarType<T[P], AggregateFMBlogPost[P]>
-      : GetScalarType<T[P], AggregateFMBlogPost[P]>
+        : GetScalarType<T[P], AggregateBlogPost[P]>
+      : GetScalarType<T[P], AggregateBlogPost[P]>
   }
 
 
 
 
-  export type FMBlogPostGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: FMBlogPostWhereInput
-    orderBy?: FMBlogPostOrderByWithAggregationInput | FMBlogPostOrderByWithAggregationInput[]
-    by: FMBlogPostScalarFieldEnum[] | FMBlogPostScalarFieldEnum
-    having?: FMBlogPostScalarWhereWithAggregatesInput
+  export type BlogPostGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: BlogPostWhereInput
+    orderBy?: BlogPostOrderByWithAggregationInput | BlogPostOrderByWithAggregationInput[]
+    by: BlogPostScalarFieldEnum[] | BlogPostScalarFieldEnum
+    having?: BlogPostScalarWhereWithAggregatesInput
     take?: number
     skip?: number
-    _count?: FMBlogPostCountAggregateInputType | true
-    _min?: FMBlogPostMinAggregateInputType
-    _max?: FMBlogPostMaxAggregateInputType
+    _count?: BlogPostCountAggregateInputType | true
+    _min?: BlogPostMinAggregateInputType
+    _max?: BlogPostMaxAggregateInputType
   }
 
-  export type FMBlogPostGroupByOutputType = {
+  export type BlogPostGroupByOutputType = {
     id: string
     title: string
     content: string
@@ -1029,26 +1029,26 @@ export namespace Prisma {
     authorImage: string
     createdAt: Date
     updatedAt: Date
-    _count: FMBlogPostCountAggregateOutputType | null
-    _min: FMBlogPostMinAggregateOutputType | null
-    _max: FMBlogPostMaxAggregateOutputType | null
+    _count: BlogPostCountAggregateOutputType | null
+    _min: BlogPostMinAggregateOutputType | null
+    _max: BlogPostMaxAggregateOutputType | null
   }
 
-  type GetFMBlogPostGroupByPayload<T extends FMBlogPostGroupByArgs> = Prisma.PrismaPromise<
+  type GetBlogPostGroupByPayload<T extends BlogPostGroupByArgs> = Prisma.PrismaPromise<
     Array<
-      PickEnumerable<FMBlogPostGroupByOutputType, T['by']> &
+      PickEnumerable<BlogPostGroupByOutputType, T['by']> &
         {
-          [P in ((keyof T) & (keyof FMBlogPostGroupByOutputType))]: P extends '_count'
+          [P in ((keyof T) & (keyof BlogPostGroupByOutputType))]: P extends '_count'
             ? T[P] extends boolean
               ? number
-              : GetScalarType<T[P], FMBlogPostGroupByOutputType[P]>
-            : GetScalarType<T[P], FMBlogPostGroupByOutputType[P]>
+              : GetScalarType<T[P], BlogPostGroupByOutputType[P]>
+            : GetScalarType<T[P], BlogPostGroupByOutputType[P]>
         }
       >
     >
 
 
-  export type FMBlogPostSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type BlogPostSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     title?: boolean
     content?: boolean
@@ -1057,9 +1057,9 @@ export namespace Prisma {
     authorImage?: boolean
     createdAt?: boolean
     updatedAt?: boolean
-  }, ExtArgs["result"]["fMBlogPost"]>
+  }, ExtArgs["result"]["blogPost"]>
 
-  export type FMBlogPostSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type BlogPostSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     title?: boolean
     content?: boolean
@@ -1068,9 +1068,9 @@ export namespace Prisma {
     authorImage?: boolean
     createdAt?: boolean
     updatedAt?: boolean
-  }, ExtArgs["result"]["fMBlogPost"]>
+  }, ExtArgs["result"]["blogPost"]>
 
-  export type FMBlogPostSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type BlogPostSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     title?: boolean
     content?: boolean
@@ -1079,9 +1079,9 @@ export namespace Prisma {
     authorImage?: boolean
     createdAt?: boolean
     updatedAt?: boolean
-  }, ExtArgs["result"]["fMBlogPost"]>
+  }, ExtArgs["result"]["blogPost"]>
 
-  export type FMBlogPostSelectScalar = {
+  export type BlogPostSelectScalar = {
     id?: boolean
     title?: boolean
     content?: boolean
@@ -1092,10 +1092,10 @@ export namespace Prisma {
     updatedAt?: boolean
   }
 
-  export type FMBlogPostOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "content" | "authorId" | "authorName" | "authorImage" | "createdAt" | "updatedAt", ExtArgs["result"]["fMBlogPost"]>
+  export type BlogPostOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "content" | "authorId" | "authorName" | "authorImage" | "createdAt" | "updatedAt", ExtArgs["result"]["blogPost"]>
 
-  export type $FMBlogPostPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    name: "FMBlogPost"
+  export type $BlogPostPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "BlogPost"
     objects: {}
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -1106,136 +1106,136 @@ export namespace Prisma {
       authorImage: string
       createdAt: Date
       updatedAt: Date
-    }, ExtArgs["result"]["fMBlogPost"]>
+    }, ExtArgs["result"]["blogPost"]>
     composites: {}
   }
 
-  type FMBlogPostGetPayload<S extends boolean | null | undefined | FMBlogPostDefaultArgs> = $Result.GetResult<Prisma.$FMBlogPostPayload, S>
+  type BlogPostGetPayload<S extends boolean | null | undefined | BlogPostDefaultArgs> = $Result.GetResult<Prisma.$BlogPostPayload, S>
 
-  type FMBlogPostCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
-    Omit<FMBlogPostFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
-      select?: FMBlogPostCountAggregateInputType | true
+  type BlogPostCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<BlogPostFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: BlogPostCountAggregateInputType | true
     }
 
-  export interface FMBlogPostDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
-    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['FMBlogPost'], meta: { name: 'FMBlogPost' } }
+  export interface BlogPostDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['BlogPost'], meta: { name: 'BlogPost' } }
     /**
-     * Find zero or one FMBlogPost that matches the filter.
-     * @param {FMBlogPostFindUniqueArgs} args - Arguments to find a FMBlogPost
+     * Find zero or one BlogPost that matches the filter.
+     * @param {BlogPostFindUniqueArgs} args - Arguments to find a BlogPost
      * @example
-     * // Get one FMBlogPost
-     * const fMBlogPost = await prisma.fMBlogPost.findUnique({
+     * // Get one BlogPost
+     * const blogPost = await prisma.blogPost.findUnique({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUnique<T extends FMBlogPostFindUniqueArgs>(args: SelectSubset<T, FMBlogPostFindUniqueArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findUnique<T extends BlogPostFindUniqueArgs>(args: SelectSubset<T, BlogPostFindUniqueArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find one FMBlogPost that matches the filter or throw an error with `error.code='P2025'`
+     * Find one BlogPost that matches the filter or throw an error with `error.code='P2025'`
      * if no matches were found.
-     * @param {FMBlogPostFindUniqueOrThrowArgs} args - Arguments to find a FMBlogPost
+     * @param {BlogPostFindUniqueOrThrowArgs} args - Arguments to find a BlogPost
      * @example
-     * // Get one FMBlogPost
-     * const fMBlogPost = await prisma.fMBlogPost.findUniqueOrThrow({
+     * // Get one BlogPost
+     * const blogPost = await prisma.blogPost.findUniqueOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUniqueOrThrow<T extends FMBlogPostFindUniqueOrThrowArgs>(args: SelectSubset<T, FMBlogPostFindUniqueOrThrowArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findUniqueOrThrow<T extends BlogPostFindUniqueOrThrowArgs>(args: SelectSubset<T, BlogPostFindUniqueOrThrowArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first FMBlogPost that matches the filter.
+     * Find the first BlogPost that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {FMBlogPostFindFirstArgs} args - Arguments to find a FMBlogPost
+     * @param {BlogPostFindFirstArgs} args - Arguments to find a BlogPost
      * @example
-     * // Get one FMBlogPost
-     * const fMBlogPost = await prisma.fMBlogPost.findFirst({
+     * // Get one BlogPost
+     * const blogPost = await prisma.blogPost.findFirst({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirst<T extends FMBlogPostFindFirstArgs>(args?: SelectSubset<T, FMBlogPostFindFirstArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findFirst<T extends BlogPostFindFirstArgs>(args?: SelectSubset<T, BlogPostFindFirstArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first FMBlogPost that matches the filter or
+     * Find the first BlogPost that matches the filter or
      * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {FMBlogPostFindFirstOrThrowArgs} args - Arguments to find a FMBlogPost
+     * @param {BlogPostFindFirstOrThrowArgs} args - Arguments to find a BlogPost
      * @example
-     * // Get one FMBlogPost
-     * const fMBlogPost = await prisma.fMBlogPost.findFirstOrThrow({
+     * // Get one BlogPost
+     * const blogPost = await prisma.blogPost.findFirstOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirstOrThrow<T extends FMBlogPostFindFirstOrThrowArgs>(args?: SelectSubset<T, FMBlogPostFindFirstOrThrowArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findFirstOrThrow<T extends BlogPostFindFirstOrThrowArgs>(args?: SelectSubset<T, BlogPostFindFirstOrThrowArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find zero or more FMBlogPosts that matches the filter.
+     * Find zero or more BlogPosts that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {FMBlogPostFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @param {BlogPostFindManyArgs} args - Arguments to filter and select certain fields only.
      * @example
-     * // Get all FMBlogPosts
-     * const fMBlogPosts = await prisma.fMBlogPost.findMany()
+     * // Get all BlogPosts
+     * const blogPosts = await prisma.blogPost.findMany()
      * 
-     * // Get first 10 FMBlogPosts
-     * const fMBlogPosts = await prisma.fMBlogPost.findMany({ take: 10 })
+     * // Get first 10 BlogPosts
+     * const blogPosts = await prisma.blogPost.findMany({ take: 10 })
      * 
      * // Only select the `id`
-     * const fMBlogPostWithIdOnly = await prisma.fMBlogPost.findMany({ select: { id: true } })
+     * const blogPostWithIdOnly = await prisma.blogPost.findMany({ select: { id: true } })
      * 
      */
-    findMany<T extends FMBlogPostFindManyArgs>(args?: SelectSubset<T, FMBlogPostFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+    findMany<T extends BlogPostFindManyArgs>(args?: SelectSubset<T, BlogPostFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
 
     /**
-     * Create a FMBlogPost.
-     * @param {FMBlogPostCreateArgs} args - Arguments to create a FMBlogPost.
+     * Create a BlogPost.
+     * @param {BlogPostCreateArgs} args - Arguments to create a BlogPost.
      * @example
-     * // Create one FMBlogPost
-     * const FMBlogPost = await prisma.fMBlogPost.create({
+     * // Create one BlogPost
+     * const BlogPost = await prisma.blogPost.create({
      *   data: {
-     *     // ... data to create a FMBlogPost
+     *     // ... data to create a BlogPost
      *   }
      * })
      * 
      */
-    create<T extends FMBlogPostCreateArgs>(args: SelectSubset<T, FMBlogPostCreateArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    create<T extends BlogPostCreateArgs>(args: SelectSubset<T, BlogPostCreateArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Create many FMBlogPosts.
-     * @param {FMBlogPostCreateManyArgs} args - Arguments to create many FMBlogPosts.
+     * Create many BlogPosts.
+     * @param {BlogPostCreateManyArgs} args - Arguments to create many BlogPosts.
      * @example
-     * // Create many FMBlogPosts
-     * const fMBlogPost = await prisma.fMBlogPost.createMany({
+     * // Create many BlogPosts
+     * const blogPost = await prisma.blogPost.createMany({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      *     
      */
-    createMany<T extends FMBlogPostCreateManyArgs>(args?: SelectSubset<T, FMBlogPostCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    createMany<T extends BlogPostCreateManyArgs>(args?: SelectSubset<T, BlogPostCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many FMBlogPosts and returns the data saved in the database.
-     * @param {FMBlogPostCreateManyAndReturnArgs} args - Arguments to create many FMBlogPosts.
+     * Create many BlogPosts and returns the data saved in the database.
+     * @param {BlogPostCreateManyAndReturnArgs} args - Arguments to create many BlogPosts.
      * @example
-     * // Create many FMBlogPosts
-     * const fMBlogPost = await prisma.fMBlogPost.createManyAndReturn({
+     * // Create many BlogPosts
+     * const blogPost = await prisma.blogPost.createManyAndReturn({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      * 
-     * // Create many FMBlogPosts and only return the `id`
-     * const fMBlogPostWithIdOnly = await prisma.fMBlogPost.createManyAndReturn({
+     * // Create many BlogPosts and only return the `id`
+     * const blogPostWithIdOnly = await prisma.blogPost.createManyAndReturn({
      *   select: { id: true },
      *   data: [
      *     // ... provide data here
@@ -1245,28 +1245,28 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    createManyAndReturn<T extends FMBlogPostCreateManyAndReturnArgs>(args?: SelectSubset<T, FMBlogPostCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+    createManyAndReturn<T extends BlogPostCreateManyAndReturnArgs>(args?: SelectSubset<T, BlogPostCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Delete a FMBlogPost.
-     * @param {FMBlogPostDeleteArgs} args - Arguments to delete one FMBlogPost.
+     * Delete a BlogPost.
+     * @param {BlogPostDeleteArgs} args - Arguments to delete one BlogPost.
      * @example
-     * // Delete one FMBlogPost
-     * const FMBlogPost = await prisma.fMBlogPost.delete({
+     * // Delete one BlogPost
+     * const BlogPost = await prisma.blogPost.delete({
      *   where: {
-     *     // ... filter to delete one FMBlogPost
+     *     // ... filter to delete one BlogPost
      *   }
      * })
      * 
      */
-    delete<T extends FMBlogPostDeleteArgs>(args: SelectSubset<T, FMBlogPostDeleteArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    delete<T extends BlogPostDeleteArgs>(args: SelectSubset<T, BlogPostDeleteArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Update one FMBlogPost.
-     * @param {FMBlogPostUpdateArgs} args - Arguments to update one FMBlogPost.
+     * Update one BlogPost.
+     * @param {BlogPostUpdateArgs} args - Arguments to update one BlogPost.
      * @example
-     * // Update one FMBlogPost
-     * const fMBlogPost = await prisma.fMBlogPost.update({
+     * // Update one BlogPost
+     * const blogPost = await prisma.blogPost.update({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -1276,30 +1276,30 @@ export namespace Prisma {
      * })
      * 
      */
-    update<T extends FMBlogPostUpdateArgs>(args: SelectSubset<T, FMBlogPostUpdateArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    update<T extends BlogPostUpdateArgs>(args: SelectSubset<T, BlogPostUpdateArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Delete zero or more FMBlogPosts.
-     * @param {FMBlogPostDeleteManyArgs} args - Arguments to filter FMBlogPosts to delete.
+     * Delete zero or more BlogPosts.
+     * @param {BlogPostDeleteManyArgs} args - Arguments to filter BlogPosts to delete.
      * @example
-     * // Delete a few FMBlogPosts
-     * const { count } = await prisma.fMBlogPost.deleteMany({
+     * // Delete a few BlogPosts
+     * const { count } = await prisma.blogPost.deleteMany({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      * 
      */
-    deleteMany<T extends FMBlogPostDeleteManyArgs>(args?: SelectSubset<T, FMBlogPostDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    deleteMany<T extends BlogPostDeleteManyArgs>(args?: SelectSubset<T, BlogPostDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more FMBlogPosts.
+     * Update zero or more BlogPosts.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {FMBlogPostUpdateManyArgs} args - Arguments to update one or more rows.
+     * @param {BlogPostUpdateManyArgs} args - Arguments to update one or more rows.
      * @example
-     * // Update many FMBlogPosts
-     * const fMBlogPost = await prisma.fMBlogPost.updateMany({
+     * // Update many BlogPosts
+     * const blogPost = await prisma.blogPost.updateMany({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -1309,14 +1309,14 @@ export namespace Prisma {
      * })
      * 
      */
-    updateMany<T extends FMBlogPostUpdateManyArgs>(args: SelectSubset<T, FMBlogPostUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    updateMany<T extends BlogPostUpdateManyArgs>(args: SelectSubset<T, BlogPostUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more FMBlogPosts and returns the data updated in the database.
-     * @param {FMBlogPostUpdateManyAndReturnArgs} args - Arguments to update many FMBlogPosts.
+     * Update zero or more BlogPosts and returns the data updated in the database.
+     * @param {BlogPostUpdateManyAndReturnArgs} args - Arguments to update many BlogPosts.
      * @example
-     * // Update many FMBlogPosts
-     * const fMBlogPost = await prisma.fMBlogPost.updateManyAndReturn({
+     * // Update many BlogPosts
+     * const blogPost = await prisma.blogPost.updateManyAndReturn({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -1325,8 +1325,8 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Update zero or more FMBlogPosts and only return the `id`
-     * const fMBlogPostWithIdOnly = await prisma.fMBlogPost.updateManyAndReturn({
+     * // Update zero or more BlogPosts and only return the `id`
+     * const blogPostWithIdOnly = await prisma.blogPost.updateManyAndReturn({
      *   select: { id: true },
      *   where: {
      *     // ... provide filter here
@@ -1339,56 +1339,56 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    updateManyAndReturn<T extends FMBlogPostUpdateManyAndReturnArgs>(args: SelectSubset<T, FMBlogPostUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+    updateManyAndReturn<T extends BlogPostUpdateManyAndReturnArgs>(args: SelectSubset<T, BlogPostUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Create or update one FMBlogPost.
-     * @param {FMBlogPostUpsertArgs} args - Arguments to update or create a FMBlogPost.
+     * Create or update one BlogPost.
+     * @param {BlogPostUpsertArgs} args - Arguments to update or create a BlogPost.
      * @example
-     * // Update or create a FMBlogPost
-     * const fMBlogPost = await prisma.fMBlogPost.upsert({
+     * // Update or create a BlogPost
+     * const blogPost = await prisma.blogPost.upsert({
      *   create: {
-     *     // ... data to create a FMBlogPost
+     *     // ... data to create a BlogPost
      *   },
      *   update: {
      *     // ... in case it already exists, update
      *   },
      *   where: {
-     *     // ... the filter for the FMBlogPost we want to update
+     *     // ... the filter for the BlogPost we want to update
      *   }
      * })
      */
-    upsert<T extends FMBlogPostUpsertArgs>(args: SelectSubset<T, FMBlogPostUpsertArgs<ExtArgs>>): Prisma__FMBlogPostClient<$Result.GetResult<Prisma.$FMBlogPostPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    upsert<T extends BlogPostUpsertArgs>(args: SelectSubset<T, BlogPostUpsertArgs<ExtArgs>>): Prisma__BlogPostClient<$Result.GetResult<Prisma.$BlogPostPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
 
     /**
-     * Count the number of FMBlogPosts.
+     * Count the number of BlogPosts.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {FMBlogPostCountArgs} args - Arguments to filter FMBlogPosts to count.
+     * @param {BlogPostCountArgs} args - Arguments to filter BlogPosts to count.
      * @example
-     * // Count the number of FMBlogPosts
-     * const count = await prisma.fMBlogPost.count({
+     * // Count the number of BlogPosts
+     * const count = await prisma.blogPost.count({
      *   where: {
-     *     // ... the filter for the FMBlogPosts we want to count
+     *     // ... the filter for the BlogPosts we want to count
      *   }
      * })
     **/
-    count<T extends FMBlogPostCountArgs>(
-      args?: Subset<T, FMBlogPostCountArgs>,
+    count<T extends BlogPostCountArgs>(
+      args?: Subset<T, BlogPostCountArgs>,
     ): Prisma.PrismaPromise<
       T extends $Utils.Record<'select', any>
         ? T['select'] extends true
           ? number
-          : GetScalarType<T['select'], FMBlogPostCountAggregateOutputType>
+          : GetScalarType<T['select'], BlogPostCountAggregateOutputType>
         : number
     >
 
     /**
-     * Allows you to perform aggregations operations on a FMBlogPost.
+     * Allows you to perform aggregations operations on a BlogPost.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {FMBlogPostAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @param {BlogPostAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
      * @example
      * // Ordered by age ascending
      * // Where email contains prisma.io
@@ -1408,13 +1408,13 @@ export namespace Prisma {
      *   take: 10,
      * })
     **/
-    aggregate<T extends FMBlogPostAggregateArgs>(args: Subset<T, FMBlogPostAggregateArgs>): Prisma.PrismaPromise<GetFMBlogPostAggregateType<T>>
+    aggregate<T extends BlogPostAggregateArgs>(args: Subset<T, BlogPostAggregateArgs>): Prisma.PrismaPromise<GetBlogPostAggregateType<T>>
 
     /**
-     * Group by FMBlogPost.
+     * Group by BlogPost.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {FMBlogPostGroupByArgs} args - Group by arguments.
+     * @param {BlogPostGroupByArgs} args - Group by arguments.
      * @example
      * // Group by city, order by createdAt, get count
      * const result = await prisma.user.groupBy({
@@ -1429,14 +1429,14 @@ export namespace Prisma {
      * 
     **/
     groupBy<
-      T extends FMBlogPostGroupByArgs,
+      T extends BlogPostGroupByArgs,
       HasSelectOrTake extends Or<
         Extends<'skip', Keys<T>>,
         Extends<'take', Keys<T>>
       >,
       OrderByArg extends True extends HasSelectOrTake
-        ? { orderBy: FMBlogPostGroupByArgs['orderBy'] }
-        : { orderBy?: FMBlogPostGroupByArgs['orderBy'] },
+        ? { orderBy: BlogPostGroupByArgs['orderBy'] }
+        : { orderBy?: BlogPostGroupByArgs['orderBy'] },
       OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
       ByFields extends MaybeTupleToUnion<T['by']>,
       ByValid extends Has<ByFields, OrderFields>,
@@ -1485,20 +1485,20 @@ export namespace Prisma {
             ? never
             : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
         }[OrderFields]
-    >(args: SubsetIntersection<T, FMBlogPostGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetFMBlogPostGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+    >(args: SubsetIntersection<T, BlogPostGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetBlogPostGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
   /**
-   * Fields of the FMBlogPost model
+   * Fields of the BlogPost model
    */
-  readonly fields: FMBlogPostFieldRefs;
+  readonly fields: BlogPostFieldRefs;
   }
 
   /**
-   * The delegate class that acts as a "Promise-like" for FMBlogPost.
+   * The delegate class that acts as a "Promise-like" for BlogPost.
    * Why is this prefixed with `Prisma__`?
    * Because we want to prevent naming conflicts as mentioned in
    * https://github.com/prisma/prisma-client-js/issues/707
    */
-  export interface Prisma__FMBlogPostClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+  export interface Prisma__BlogPostClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -1526,380 +1526,380 @@ export namespace Prisma {
 
 
   /**
-   * Fields of the FMBlogPost model
+   * Fields of the BlogPost model
    */
-  interface FMBlogPostFieldRefs {
-    readonly id: FieldRef<"FMBlogPost", 'String'>
-    readonly title: FieldRef<"FMBlogPost", 'String'>
-    readonly content: FieldRef<"FMBlogPost", 'String'>
-    readonly authorId: FieldRef<"FMBlogPost", 'String'>
-    readonly authorName: FieldRef<"FMBlogPost", 'String'>
-    readonly authorImage: FieldRef<"FMBlogPost", 'String'>
-    readonly createdAt: FieldRef<"FMBlogPost", 'DateTime'>
-    readonly updatedAt: FieldRef<"FMBlogPost", 'DateTime'>
+  interface BlogPostFieldRefs {
+    readonly id: FieldRef<"BlogPost", 'String'>
+    readonly title: FieldRef<"BlogPost", 'String'>
+    readonly content: FieldRef<"BlogPost", 'String'>
+    readonly authorId: FieldRef<"BlogPost", 'String'>
+    readonly authorName: FieldRef<"BlogPost", 'String'>
+    readonly authorImage: FieldRef<"BlogPost", 'String'>
+    readonly createdAt: FieldRef<"BlogPost", 'DateTime'>
+    readonly updatedAt: FieldRef<"BlogPost", 'DateTime'>
   }
     
 
   // Custom InputTypes
   /**
-   * FMBlogPost findUnique
+   * BlogPost findUnique
    */
-  export type FMBlogPostFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * Filter, which FMBlogPost to fetch.
+     * Filter, which BlogPost to fetch.
      */
-    where: FMBlogPostWhereUniqueInput
+    where: BlogPostWhereUniqueInput
   }
 
   /**
-   * FMBlogPost findUniqueOrThrow
+   * BlogPost findUniqueOrThrow
    */
-  export type FMBlogPostFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * Filter, which FMBlogPost to fetch.
+     * Filter, which BlogPost to fetch.
      */
-    where: FMBlogPostWhereUniqueInput
+    where: BlogPostWhereUniqueInput
   }
 
   /**
-   * FMBlogPost findFirst
+   * BlogPost findFirst
    */
-  export type FMBlogPostFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * Filter, which FMBlogPost to fetch.
+     * Filter, which BlogPost to fetch.
      */
-    where?: FMBlogPostWhereInput
+    where?: BlogPostWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of FMBlogPosts to fetch.
+     * Determine the order of BlogPosts to fetch.
      */
-    orderBy?: FMBlogPostOrderByWithRelationInput | FMBlogPostOrderByWithRelationInput[]
+    orderBy?: BlogPostOrderByWithRelationInput | BlogPostOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for FMBlogPosts.
+     * Sets the position for searching for BlogPosts.
      */
-    cursor?: FMBlogPostWhereUniqueInput
+    cursor?: BlogPostWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` FMBlogPosts from the position of the cursor.
+     * Take `±n` BlogPosts from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` FMBlogPosts.
+     * Skip the first `n` BlogPosts.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of FMBlogPosts.
+     * Filter by unique combinations of BlogPosts.
      */
-    distinct?: FMBlogPostScalarFieldEnum | FMBlogPostScalarFieldEnum[]
+    distinct?: BlogPostScalarFieldEnum | BlogPostScalarFieldEnum[]
   }
 
   /**
-   * FMBlogPost findFirstOrThrow
+   * BlogPost findFirstOrThrow
    */
-  export type FMBlogPostFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * Filter, which FMBlogPost to fetch.
+     * Filter, which BlogPost to fetch.
      */
-    where?: FMBlogPostWhereInput
+    where?: BlogPostWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of FMBlogPosts to fetch.
+     * Determine the order of BlogPosts to fetch.
      */
-    orderBy?: FMBlogPostOrderByWithRelationInput | FMBlogPostOrderByWithRelationInput[]
+    orderBy?: BlogPostOrderByWithRelationInput | BlogPostOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for FMBlogPosts.
+     * Sets the position for searching for BlogPosts.
      */
-    cursor?: FMBlogPostWhereUniqueInput
+    cursor?: BlogPostWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` FMBlogPosts from the position of the cursor.
+     * Take `±n` BlogPosts from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` FMBlogPosts.
+     * Skip the first `n` BlogPosts.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of FMBlogPosts.
+     * Filter by unique combinations of BlogPosts.
      */
-    distinct?: FMBlogPostScalarFieldEnum | FMBlogPostScalarFieldEnum[]
+    distinct?: BlogPostScalarFieldEnum | BlogPostScalarFieldEnum[]
   }
 
   /**
-   * FMBlogPost findMany
+   * BlogPost findMany
    */
-  export type FMBlogPostFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * Filter, which FMBlogPosts to fetch.
+     * Filter, which BlogPosts to fetch.
      */
-    where?: FMBlogPostWhereInput
+    where?: BlogPostWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of FMBlogPosts to fetch.
+     * Determine the order of BlogPosts to fetch.
      */
-    orderBy?: FMBlogPostOrderByWithRelationInput | FMBlogPostOrderByWithRelationInput[]
+    orderBy?: BlogPostOrderByWithRelationInput | BlogPostOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for listing FMBlogPosts.
+     * Sets the position for listing BlogPosts.
      */
-    cursor?: FMBlogPostWhereUniqueInput
+    cursor?: BlogPostWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` FMBlogPosts from the position of the cursor.
+     * Take `±n` BlogPosts from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` FMBlogPosts.
+     * Skip the first `n` BlogPosts.
      */
     skip?: number
-    distinct?: FMBlogPostScalarFieldEnum | FMBlogPostScalarFieldEnum[]
+    distinct?: BlogPostScalarFieldEnum | BlogPostScalarFieldEnum[]
   }
 
   /**
-   * FMBlogPost create
+   * BlogPost create
    */
-  export type FMBlogPostCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * The data needed to create a FMBlogPost.
+     * The data needed to create a BlogPost.
      */
-    data: XOR<FMBlogPostCreateInput, FMBlogPostUncheckedCreateInput>
+    data: XOR<BlogPostCreateInput, BlogPostUncheckedCreateInput>
   }
 
   /**
-   * FMBlogPost createMany
+   * BlogPost createMany
    */
-  export type FMBlogPostCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to create many FMBlogPosts.
+     * The data used to create many BlogPosts.
      */
-    data: FMBlogPostCreateManyInput | FMBlogPostCreateManyInput[]
+    data: BlogPostCreateManyInput | BlogPostCreateManyInput[]
     skipDuplicates?: boolean
   }
 
   /**
-   * FMBlogPost createManyAndReturn
+   * BlogPost createManyAndReturn
    */
-  export type FMBlogPostCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelectCreateManyAndReturn<ExtArgs> | null
+    select?: BlogPostSelectCreateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * The data used to create many FMBlogPosts.
+     * The data used to create many BlogPosts.
      */
-    data: FMBlogPostCreateManyInput | FMBlogPostCreateManyInput[]
+    data: BlogPostCreateManyInput | BlogPostCreateManyInput[]
     skipDuplicates?: boolean
   }
 
   /**
-   * FMBlogPost update
+   * BlogPost update
    */
-  export type FMBlogPostUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * The data needed to update a FMBlogPost.
+     * The data needed to update a BlogPost.
      */
-    data: XOR<FMBlogPostUpdateInput, FMBlogPostUncheckedUpdateInput>
+    data: XOR<BlogPostUpdateInput, BlogPostUncheckedUpdateInput>
     /**
-     * Choose, which FMBlogPost to update.
+     * Choose, which BlogPost to update.
      */
-    where: FMBlogPostWhereUniqueInput
+    where: BlogPostWhereUniqueInput
   }
 
   /**
-   * FMBlogPost updateMany
+   * BlogPost updateMany
    */
-  export type FMBlogPostUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to update FMBlogPosts.
+     * The data used to update BlogPosts.
      */
-    data: XOR<FMBlogPostUpdateManyMutationInput, FMBlogPostUncheckedUpdateManyInput>
+    data: XOR<BlogPostUpdateManyMutationInput, BlogPostUncheckedUpdateManyInput>
     /**
-     * Filter which FMBlogPosts to update
+     * Filter which BlogPosts to update
      */
-    where?: FMBlogPostWhereInput
+    where?: BlogPostWhereInput
     /**
-     * Limit how many FMBlogPosts to update.
+     * Limit how many BlogPosts to update.
      */
     limit?: number
   }
 
   /**
-   * FMBlogPost updateManyAndReturn
+   * BlogPost updateManyAndReturn
    */
-  export type FMBlogPostUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelectUpdateManyAndReturn<ExtArgs> | null
+    select?: BlogPostSelectUpdateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * The data used to update FMBlogPosts.
+     * The data used to update BlogPosts.
      */
-    data: XOR<FMBlogPostUpdateManyMutationInput, FMBlogPostUncheckedUpdateManyInput>
+    data: XOR<BlogPostUpdateManyMutationInput, BlogPostUncheckedUpdateManyInput>
     /**
-     * Filter which FMBlogPosts to update
+     * Filter which BlogPosts to update
      */
-    where?: FMBlogPostWhereInput
+    where?: BlogPostWhereInput
     /**
-     * Limit how many FMBlogPosts to update.
+     * Limit how many BlogPosts to update.
      */
     limit?: number
   }
 
   /**
-   * FMBlogPost upsert
+   * BlogPost upsert
    */
-  export type FMBlogPostUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * The filter to search for the FMBlogPost to update in case it exists.
+     * The filter to search for the BlogPost to update in case it exists.
      */
-    where: FMBlogPostWhereUniqueInput
+    where: BlogPostWhereUniqueInput
     /**
-     * In case the FMBlogPost found by the `where` argument doesn't exist, create a new FMBlogPost with this data.
+     * In case the BlogPost found by the `where` argument doesn't exist, create a new BlogPost with this data.
      */
-    create: XOR<FMBlogPostCreateInput, FMBlogPostUncheckedCreateInput>
+    create: XOR<BlogPostCreateInput, BlogPostUncheckedCreateInput>
     /**
-     * In case the FMBlogPost was found with the provided `where` argument, update it with this data.
+     * In case the BlogPost was found with the provided `where` argument, update it with this data.
      */
-    update: XOR<FMBlogPostUpdateInput, FMBlogPostUncheckedUpdateInput>
+    update: XOR<BlogPostUpdateInput, BlogPostUncheckedUpdateInput>
   }
 
   /**
-   * FMBlogPost delete
+   * BlogPost delete
    */
-  export type FMBlogPostDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
     /**
-     * Filter which FMBlogPost to delete.
+     * Filter which BlogPost to delete.
      */
-    where: FMBlogPostWhereUniqueInput
+    where: BlogPostWhereUniqueInput
   }
 
   /**
-   * FMBlogPost deleteMany
+   * BlogPost deleteMany
    */
-  export type FMBlogPostDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which FMBlogPosts to delete
+     * Filter which BlogPosts to delete
      */
-    where?: FMBlogPostWhereInput
+    where?: BlogPostWhereInput
     /**
-     * Limit how many FMBlogPosts to delete.
+     * Limit how many BlogPosts to delete.
      */
     limit?: number
   }
 
   /**
-   * FMBlogPost without action
+   * BlogPost without action
    */
-  export type FMBlogPostDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type BlogPostDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the FMBlogPost
+     * Select specific fields to fetch from the BlogPost
      */
-    select?: FMBlogPostSelect<ExtArgs> | null
+    select?: BlogPostSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the FMBlogPost
+     * Omit specific fields from the BlogPost
      */
-    omit?: FMBlogPostOmit<ExtArgs> | null
+    omit?: BlogPostOmit<ExtArgs> | null
   }
 
 
@@ -1917,7 +1917,7 @@ export namespace Prisma {
   export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
 
 
-  export const FMBlogPostScalarFieldEnum: {
+  export const BlogPostScalarFieldEnum: {
     id: 'id',
     title: 'title',
     content: 'content',
@@ -1928,7 +1928,7 @@ export namespace Prisma {
     updatedAt: 'updatedAt'
   };
 
-  export type FMBlogPostScalarFieldEnum = (typeof FMBlogPostScalarFieldEnum)[keyof typeof FMBlogPostScalarFieldEnum]
+  export type BlogPostScalarFieldEnum = (typeof BlogPostScalarFieldEnum)[keyof typeof BlogPostScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -1997,21 +1997,21 @@ export namespace Prisma {
    */
 
 
-  export type FMBlogPostWhereInput = {
-    AND?: FMBlogPostWhereInput | FMBlogPostWhereInput[]
-    OR?: FMBlogPostWhereInput[]
-    NOT?: FMBlogPostWhereInput | FMBlogPostWhereInput[]
-    id?: StringFilter<"FMBlogPost"> | string
-    title?: StringFilter<"FMBlogPost"> | string
-    content?: StringFilter<"FMBlogPost"> | string
-    authorId?: StringFilter<"FMBlogPost"> | string
-    authorName?: StringFilter<"FMBlogPost"> | string
-    authorImage?: StringFilter<"FMBlogPost"> | string
-    createdAt?: DateTimeFilter<"FMBlogPost"> | Date | string
-    updatedAt?: DateTimeFilter<"FMBlogPost"> | Date | string
+  export type BlogPostWhereInput = {
+    AND?: BlogPostWhereInput | BlogPostWhereInput[]
+    OR?: BlogPostWhereInput[]
+    NOT?: BlogPostWhereInput | BlogPostWhereInput[]
+    id?: StringFilter<"BlogPost"> | string
+    title?: StringFilter<"BlogPost"> | string
+    content?: StringFilter<"BlogPost"> | string
+    authorId?: StringFilter<"BlogPost"> | string
+    authorName?: StringFilter<"BlogPost"> | string
+    authorImage?: StringFilter<"BlogPost"> | string
+    createdAt?: DateTimeFilter<"BlogPost"> | Date | string
+    updatedAt?: DateTimeFilter<"BlogPost"> | Date | string
   }
 
-  export type FMBlogPostOrderByWithRelationInput = {
+  export type BlogPostOrderByWithRelationInput = {
     id?: SortOrder
     title?: SortOrder
     content?: SortOrder
@@ -2022,21 +2022,21 @@ export namespace Prisma {
     updatedAt?: SortOrder
   }
 
-  export type FMBlogPostWhereUniqueInput = Prisma.AtLeast<{
+  export type BlogPostWhereUniqueInput = Prisma.AtLeast<{
     id?: string
-    AND?: FMBlogPostWhereInput | FMBlogPostWhereInput[]
-    OR?: FMBlogPostWhereInput[]
-    NOT?: FMBlogPostWhereInput | FMBlogPostWhereInput[]
-    title?: StringFilter<"FMBlogPost"> | string
-    content?: StringFilter<"FMBlogPost"> | string
-    authorId?: StringFilter<"FMBlogPost"> | string
-    authorName?: StringFilter<"FMBlogPost"> | string
-    authorImage?: StringFilter<"FMBlogPost"> | string
-    createdAt?: DateTimeFilter<"FMBlogPost"> | Date | string
-    updatedAt?: DateTimeFilter<"FMBlogPost"> | Date | string
+    AND?: BlogPostWhereInput | BlogPostWhereInput[]
+    OR?: BlogPostWhereInput[]
+    NOT?: BlogPostWhereInput | BlogPostWhereInput[]
+    title?: StringFilter<"BlogPost"> | string
+    content?: StringFilter<"BlogPost"> | string
+    authorId?: StringFilter<"BlogPost"> | string
+    authorName?: StringFilter<"BlogPost"> | string
+    authorImage?: StringFilter<"BlogPost"> | string
+    createdAt?: DateTimeFilter<"BlogPost"> | Date | string
+    updatedAt?: DateTimeFilter<"BlogPost"> | Date | string
   }, "id">
 
-  export type FMBlogPostOrderByWithAggregationInput = {
+  export type BlogPostOrderByWithAggregationInput = {
     id?: SortOrder
     title?: SortOrder
     content?: SortOrder
@@ -2045,26 +2045,26 @@ export namespace Prisma {
     authorImage?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
-    _count?: FMBlogPostCountOrderByAggregateInput
-    _max?: FMBlogPostMaxOrderByAggregateInput
-    _min?: FMBlogPostMinOrderByAggregateInput
+    _count?: BlogPostCountOrderByAggregateInput
+    _max?: BlogPostMaxOrderByAggregateInput
+    _min?: BlogPostMinOrderByAggregateInput
   }
 
-  export type FMBlogPostScalarWhereWithAggregatesInput = {
-    AND?: FMBlogPostScalarWhereWithAggregatesInput | FMBlogPostScalarWhereWithAggregatesInput[]
-    OR?: FMBlogPostScalarWhereWithAggregatesInput[]
-    NOT?: FMBlogPostScalarWhereWithAggregatesInput | FMBlogPostScalarWhereWithAggregatesInput[]
-    id?: StringWithAggregatesFilter<"FMBlogPost"> | string
-    title?: StringWithAggregatesFilter<"FMBlogPost"> | string
-    content?: StringWithAggregatesFilter<"FMBlogPost"> | string
-    authorId?: StringWithAggregatesFilter<"FMBlogPost"> | string
-    authorName?: StringWithAggregatesFilter<"FMBlogPost"> | string
-    authorImage?: StringWithAggregatesFilter<"FMBlogPost"> | string
-    createdAt?: DateTimeWithAggregatesFilter<"FMBlogPost"> | Date | string
-    updatedAt?: DateTimeWithAggregatesFilter<"FMBlogPost"> | Date | string
+  export type BlogPostScalarWhereWithAggregatesInput = {
+    AND?: BlogPostScalarWhereWithAggregatesInput | BlogPostScalarWhereWithAggregatesInput[]
+    OR?: BlogPostScalarWhereWithAggregatesInput[]
+    NOT?: BlogPostScalarWhereWithAggregatesInput | BlogPostScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"BlogPost"> | string
+    title?: StringWithAggregatesFilter<"BlogPost"> | string
+    content?: StringWithAggregatesFilter<"BlogPost"> | string
+    authorId?: StringWithAggregatesFilter<"BlogPost"> | string
+    authorName?: StringWithAggregatesFilter<"BlogPost"> | string
+    authorImage?: StringWithAggregatesFilter<"BlogPost"> | string
+    createdAt?: DateTimeWithAggregatesFilter<"BlogPost"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"BlogPost"> | Date | string
   }
 
-  export type FMBlogPostCreateInput = {
+  export type BlogPostCreateInput = {
     id?: string
     title: string
     content: string
@@ -2075,7 +2075,7 @@ export namespace Prisma {
     updatedAt?: Date | string
   }
 
-  export type FMBlogPostUncheckedCreateInput = {
+  export type BlogPostUncheckedCreateInput = {
     id?: string
     title: string
     content: string
@@ -2086,7 +2086,7 @@ export namespace Prisma {
     updatedAt?: Date | string
   }
 
-  export type FMBlogPostUpdateInput = {
+  export type BlogPostUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     content?: StringFieldUpdateOperationsInput | string
@@ -2097,7 +2097,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
-  export type FMBlogPostUncheckedUpdateInput = {
+  export type BlogPostUncheckedUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     content?: StringFieldUpdateOperationsInput | string
@@ -2108,7 +2108,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
-  export type FMBlogPostCreateManyInput = {
+  export type BlogPostCreateManyInput = {
     id?: string
     title: string
     content: string
@@ -2119,7 +2119,7 @@ export namespace Prisma {
     updatedAt?: Date | string
   }
 
-  export type FMBlogPostUpdateManyMutationInput = {
+  export type BlogPostUpdateManyMutationInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     content?: StringFieldUpdateOperationsInput | string
@@ -2130,7 +2130,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
-  export type FMBlogPostUncheckedUpdateManyInput = {
+  export type BlogPostUncheckedUpdateManyInput = {
     id?: StringFieldUpdateOperationsInput | string
     title?: StringFieldUpdateOperationsInput | string
     content?: StringFieldUpdateOperationsInput | string
@@ -2167,7 +2167,7 @@ export namespace Prisma {
     not?: NestedDateTimeFilter<$PrismaModel> | Date | string
   }
 
-  export type FMBlogPostCountOrderByAggregateInput = {
+  export type BlogPostCountOrderByAggregateInput = {
     id?: SortOrder
     title?: SortOrder
     content?: SortOrder
@@ -2178,7 +2178,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
   }
 
-  export type FMBlogPostMaxOrderByAggregateInput = {
+  export type BlogPostMaxOrderByAggregateInput = {
     id?: SortOrder
     title?: SortOrder
     content?: SortOrder
@@ -2189,7 +2189,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
   }
 
-  export type FMBlogPostMinOrderByAggregateInput = {
+  export type BlogPostMinOrderByAggregateInput = {
     id?: SortOrder
     title?: SortOrder
     content?: SortOrder

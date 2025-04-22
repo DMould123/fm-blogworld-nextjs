@@ -2,7 +2,7 @@ import { prisma } from './utils/db';
 
 // Fetch data from the database
 async function getPosts() {
- const posts = await prisma.FMBlogPost.findMany({
+ const posts = await prisma.BlogPost.findMany({
     select: {
       id: true,
       title: true,
