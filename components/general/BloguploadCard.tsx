@@ -3,7 +3,7 @@ import Link from "next/link";
 
 interface IappProps {
   data: {
-    createdAt(createdAt: any): import("react").ReactNode;
+    createdAt: Date;
     authorName: string;
     authorImage: string;
     content: string;
