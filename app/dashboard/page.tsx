@@ -1,12 +1,15 @@
-
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 export default async function DashboardRoute() {
-
-
   return (
-    <div className="py-6">
-      <h1 className="text-3xl font-bold tracking-tight mb-8">Dashboard</h1>
-      <p>Welcome</p>
+    <div>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-xl font-medium">Your FM Blog Posts</h2>
+        <Link className={buttonVariants()} href="/dashboard/create">
+          Create Blog
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
