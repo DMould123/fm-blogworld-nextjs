@@ -1,6 +1,7 @@
 import { BloguploadCard } from "@/components/general/BloguploadCard";
 import { prisma } from "./utils/db";
 import { get } from "http";
+import { Suspense } from "react";
 
 // Fetch data from the database
 async function getData() {
@@ -24,7 +25,9 @@ export default function Home() {
       <h1 className="text-3xl font-bold tracking-tight mb-8">
         Latest FM Posts
       </h1>
-      <BlogPosts />
+      <Suspense fallback={<p>Loading...</p>}>
+        <BlogPosts />
+      </Suspense>
     </div>
   );
 }
