@@ -22,7 +22,7 @@ export function BloguploadCard({ data }: IappProps) {
             src={data.imageUrl}
             alt="Blog Image"
             fill
-            className="object-cover transition-transform duration-300"
+            className="object-contain transition-transform duration-300"
           />
         </div>
         <div className="p-4">
